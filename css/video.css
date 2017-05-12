@@ -1,0 +1,165 @@
+/* 视频播放器 */
+#video-wrap {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 580px;
+    height: 362px;
+    cursor: pointer;
+}
+.video {
+    position: relative;
+    height: 100%;
+}
+.video .play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/play.png) no-repeat center;
+}
+.controls {
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-color: #fff;
+    z-index: 9;
+    cursor: default;
+    transition: bottom .25s;
+    -o-transition: bottom .25s;
+    -ms-transition: bottom .25s;
+    -moz-transition: bottom .25s;
+    -webkit-transition: bottom .25s;
+}
+.show-controls {
+    bottom: 0;
+}
+.pause {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 4px;
+    cursor: pointer;
+}
+.pause:hover {
+    background-color: #eee;
+}
+.progress-wrap {
+    position: relative;
+    display: inline-block;
+    width: 387px;
+    height: 100%;
+}
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -3px;
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 4px;
+}
+.buffered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #8adced;
+    border-radius: 4px;
+}
+.progress {
+    position: absolute;
+    height: 100%;
+    background: #00a1d6;
+    border-radius: 4px;
+}
+.progress-dot {
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    box-shadow: 0 0 5px #017cc3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.progress-dot:hover {
+    box-shadow: 0 0 7px #017cc3;
+}
+.time {
+  position: relative;
+  display: inline-block;
+  top: -8px;
+  margin-left: 10px;
+  width: 100px;
+  height: 100%;
+  color: #666;
+  text-align: center;
+  line-height: 28px;
+}
+.sound-wrap {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+}
+.sound-wrap:hover {
+  background: #eee;
+}
+.sound-btn {
+  padding-top: 6px;
+  padding-left: 7px; 
+  height: 100%;
+  cursor: pointer;
+}
+.volume-wrap {
+    display: none;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  padding: 5px 0;
+  width: 30px;
+  background: #fff;
+  box-shadow: 0 0 5px #eee;
+}
+.volume-val {
+    text-align: center;
+}
+.volume-bar {
+  position: relative;
+  margin: 10px auto;
+  width: 6px;
+  height: 50px;
+  background: #eee;
+  border-radius: 4px;
+}
+.volume {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00a1d6;
+  border-radius: 4px;
+}
+.volume-dot {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  margin-left: -8px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  box-shadow: 0 0 5px #017cc3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.volume-dot:hover {
+  box-shadow: 0 0 7px #017cc3;
+}
+/* 播放器结束 */

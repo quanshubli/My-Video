@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Video</title>
+    <link rel="stylesheet" href="../css/video.css">
+    <style>
+        #video-wrap {
+            box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+        }
+    </style>
+</head>
+<body>
+    <div id="video-wrap"></div>
+
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/jquery.video.js"></script>
+    <script>
+        $('#video-wrap').createVideo({
+            url: '../videos/backkom_3_52_hd.mp4'
+        });
+    </script>
+</body>
+</html>
